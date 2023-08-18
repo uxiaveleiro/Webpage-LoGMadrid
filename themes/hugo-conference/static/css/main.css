@@ -27,7 +27,13 @@ aside,
 details,
 figcaption,
 figure,
-footer,
+footer {
+  font-size: 7;
+  font-style: italic;
+  text-align: center;
+  background-color: white; /* Add a white background color */
+  padding: 10px; /* Add padding to create the white box effect */
+}
 header,
 hgroup,
 nav,
@@ -474,6 +480,53 @@ nav {
   vertical-align: middle;
   line-height: 150px;
 }
+
+/* ==================
+ORGANIZERS 
+================= */
+.organizer-item {
+  display: inline-block;
+  margin: 0 30px 30px 0;
+}
+
+.organizers-list {
+  text-align: center; /* Center the content within the ul element */
+}
+
+.organizer-link {
+  display: block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+  border-radius: 50%; /* Add border-radius to make the image circular */
+  background-color: white; /* Optional: Add a white background for the circular image */
+}
+
+.organizer-link img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%; /* Apply border-radius to make the image circular */
+}
+
+.organizer-details {
+  text-align: center;
+}
+
+.organizer-name {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.organizer-affiliation {
+  font-style: italic;
+  margin: 5px 0;
+}
+.organizer-email {
+  margin: 0;
+}
+
 /* =============================================================================
    CONTATO
    ========================================================================== */
@@ -716,7 +769,7 @@ nav {
    HEADER
    ========================================================================== */
 .header {
-  background-image: url('../img/cover-2.jpg');
+  /* =background-image: url('../img/cover-2.jpg');*/
   background-color: #2b2b2b;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -773,6 +826,18 @@ nav {
   border: 1px solid #e7e7e7;
   background: #fff;
   border-radius: 4px;
+}
+/* =============================================================================
+   REGISTRATION
+   ========================================================================== */
+.registration {
+  border-radius: 10px;
+}
+/* =============================================================================
+   CALL FOR TALKS
+   ========================================================================== */
+.cfp {
+  border-radius: 10px;
 }
 /* =============================================================================
    LOCATION

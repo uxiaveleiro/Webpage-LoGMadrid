@@ -29,7 +29,7 @@ params:
     - sponsors
     - partners
     - location
-    - contact # change better for organizers 
+    - organizers # change better for organizers 
 
   # Titles which you can translate to other languages
   Titles:
@@ -41,7 +41,7 @@ params:
     speakers: "Speakers"
     sponsors: "Sponsors"
     partners: "Partners"
-    contact: "Contact"
+    organizers: "Organizers"
 
   # The Call To Action button at the header,
   # If you don't want this, just remove the callToAction property.
@@ -117,8 +117,11 @@ params:
         title: "Speaker Name"
         time: "Tuesday - 9h30"
 
-    - name: "Lunch"
+    - name: "Pitch talks"
       time: "Tuesday - 12h00"
+
+    - name: "Lunch"
+      time: "Tuesday - 13h00"
 
     - name: "Pitch talks"
       time: "Tuesday - 12h00"
@@ -146,8 +149,8 @@ params:
     - name: "Pitch talks"
       time: "Wednesday - 12h00"
 
-    - name: "Coffee-break"
-      time: "Wednesday - 15h00"
+    - name: "Lunch"
+      time: "Wednesday - 13h00"
 
     - name: "Pitch talks"
       time: "Wednesday - 16h00"
@@ -160,16 +163,19 @@ params:
   Contacts:
     - name: "Name Surname"
       logo: "/img/contact1.jpg"
-      email: "a@a.t"
+      email: "a@a.gal"
+      affiliation: "Xanceda"
       url: "https://www.linkedin.com/in/uxiaveleiro/"
 
     - name: "Name Surname"
       logo: "/img/contact1.jpg"
-      email: "a@a.t"
+      email: "a@a.gal"
+      affiliation: "Xanceda"
       #url: "https://gohugo.io"
 
     - name: "Name Surname"
       logo: "/img/contact1.jpg"
-      email: "a@a.t"
+      email: "a@a.gal"
+      affiliation: "Xanceda"
       #url: "https://gohugo.io"
 
