@@ -856,7 +856,11 @@ nav {
   height: 400px; /* Set the desired height */
   margin: 20px auto; /* Adjust margin as needed for positioning */
 }
-
+@media (max-width: 768px) {
+  .map-container {
+    height: 300px; /* Adjust height for mobile devices */
+  }
+}
 /* =============================================================================
    SPEAKER
    ========================================================================== */
