@@ -848,6 +848,15 @@ nav {
   border-radius: 4px;
   height: 300px;
 }
+/* modify maps container
+== */
+.map-container {
+  width: 60%;
+  max-width: 800px; /* Set a maximum width if needed */
+  height: 400px; /* Set the desired height */
+  margin: 20px auto; /* Adjust margin as needed for positioning */
+}
+
 /* =============================================================================
    SPEAKER
    ========================================================================== */
