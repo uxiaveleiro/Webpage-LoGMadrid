@@ -1,0 +1,175 @@
+baseurl: "https://example.org/"
+title: "Conference name"
+canonifyurls: true
+theme: "hugo-conference"
+
+GoogleAnalytics: ""
+
+params:
+  # Conference info
+  Name: "Conference name"
+  Description: "Conference description"
+  Date: "November DD - DD th"
+  #Price: "Only XX€" # If your event is free, just comment this line
+  Venue: "Madrid"
+  Address: "Edificio XXX, Calle XXX, NN"
+  City:  "Spain"
+  State: "Madrid"
+  Images: ["/img/badge.jpg"]
+  GoogleMapsKey: "my-secret-maps-key"
+
+  # Active sections on the website to deactivate comment out with '#'
+  # you can also change order here and it will reflect on page
+  Sections:
+    - about
+    - registration
+    - cfp
+    - schedule
+    - speakers
+    - sponsors
+    - partners
+    - location
+    - contact # change better for organizers 
+
+  # Titles which you can translate to other languages
+  Titles:
+    about: "About"
+    registration: "Registration"
+    cfp: "Call for talks"
+    location: "Location"
+    schedule: "Schedule"
+    speakers: "Speakers"
+    sponsors: "Sponsors"
+    partners: "Partners"
+    contact: "Contact"
+
+  # The Call To Action button at the header,
+  # If you don't want this, just remove the callToAction property.
+  CallToAction:
+    text: "Call for Talks"
+    link: "http://register.example.com" ## CHANGE THIS !!!
+
+  # Fork me on GitHub, if you don't want this, just remove the forkButton property
+  #ForkButton:
+  #  repository: "https://github.com/jweslley/hugo-conference/"
+
+  # List of Sponsors
+  Sponsors:
+    - name: "Michi"
+      logo: "/img/michi-cool.png"
+      #url: "http://gohugo.io"
+    - name: "Michi"
+      logo: "/img/michi-cool-2.png"
+      #url: "http://gohugo.io"
+
+  # List of Partners
+  Partners:
+    - name: "Michi"
+      logo: "/img/paw.png"
+      #url: "https://gohugo.io"
+    - name: "Michi"
+      logo: "/img/paw.png"
+      #url: "http://braziljs.org"
+
+  # The entire schedule
+  Schedule:
+
+    - name: "Check-in & Opening"
+      time: "Monday - 9h00"
+
+    - name: "Name Surname"
+      photo: "/img/speaker1.png"
+      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      company: "Cat Foundation"
+      #link:
+      #  href: "http://twitter.com/linus"
+      #  text: "@linus"
+      presentation:
+        title: "Speaker Name"
+        time: "Monday - 9h30"
+
+    - name: "Coffee-break"
+      time: "Monday - 11h00"
+
+    - name: "Pitch talks"
+      time: "Monday - 12h00"
+
+    - name: "Lunch break"
+      time: "Monday - 13h00"
+
+    - name: "Pitch talks"
+      time: "Monday - 12h00"
+
+    - name: "Coffee-break"
+      time: "Monday - 15h00"
+
+    - name: "Pitch talks"
+      time: "Monday - 16h00"
+
+    - name: "Name Surname"
+      photo: "/img/speaker2.png"
+      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      company: "Cat Foundation"
+      #link:
+      #  href: "http://twitter.com/linus"
+      #  text: "@linus"
+      presentation:
+        title: "Speaker Name"
+        time: "Tuesday - 9h30"
+
+    - name: "Lunch"
+      time: "Tuesday - 12h00"
+
+    - name: "Pitch talks"
+      time: "Tuesday - 12h00"
+
+    - name: "Coffee-break"
+      time: "Tuesday - 15h00"
+
+    - name: "Pitch talks"
+      time: "Tuesday - 16h00"
+
+    - name: "Name Surname"
+      photo: "/img/speaker3.png"
+      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      company: "Cat Foundation"
+      #link:
+      #  href: "http://twitter.com/linus"
+      #  text: "@linus"
+      presentation:
+        title: "Speaker Name"
+        time: "Wednesday - 9h30"
+        
+    - name: "Lunch"
+      time: "Wednesday - 12h00"
+
+    - name: "Pitch talks"
+      time: "Wednesday - 12h00"
+
+    - name: "Coffee-break"
+      time: "Wednesday - 15h00"
+
+    - name: "Pitch talks"
+      time: "Wednesday - 16h00"
+
+    - name: "Closing remarks"
+      time: "Wednesday - 17h00"
+
+
+  # List of Contacts
+  Contacts:
+    - name: "Name Surname"
+      logo: "/img/contact1.jpg"
+      email: "a@a.t"
+      url: "https://www.linkedin.com/in/uxiaveleiro/"
+
+    - name: "Name Surname"
+      logo: "/img/contact1.jpg"
+      email: "a@a.t"
+      #url: "https://gohugo.io"
+
+    - name: "Name Surname"
+      logo: "/img/contact1.jpg"
+      email: "a@a.t"
+      #url: "https://gohugo.io"
+
