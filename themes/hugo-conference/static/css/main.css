@@ -851,14 +851,17 @@ nav {
 /* modify maps container
 == */
 .map-container {
-  width: 60%;
-  max-width: 800px; /* Set a maximum width if needed */
-  height: 400px; /* Set the desired height */
-  margin: 20px auto; /* Adjust margin as needed for positioning */
+  width: 100%;
+  max-width: 400px; /* Set a maximum width if needed */
+  height: 300px; /* Set the desired height */
+  margin: 30px auto 200px auto;  Adjust margin as needed for positioning */
+  /* margin: 40px 10px 20px 20px; /* Margin: top right bottom left */
 }
-@media (max-width: 768px) {
+@media (max-width: 300px) {
   .map-container {
-    height: 300px; /* Adjust height for mobile devices */
+    height: 200px; /* Adjust height for mobile devices */
+    float: left
+    margin-right: 0;
   }
 }
 /* =============================================================================
