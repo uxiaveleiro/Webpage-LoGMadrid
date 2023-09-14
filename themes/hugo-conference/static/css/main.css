@@ -28,7 +28,7 @@ details,
 figcaption,
 figure,
 footer {
-  font-size: 7;
+  font-size: 7px;
   font-style: italic;
   text-align: center;
   background-color: white; /* Add a white background color */
@@ -509,6 +509,7 @@ ORGANIZERS
 .organizer-item {
   display: inline-block;
   margin: 0 30px 30px 0;
+  margin: 0 40px 40px 0; /* Increase the margin values for more separation */
 }
 
 .organizers-list {
@@ -542,12 +543,18 @@ ORGANIZERS
 }
 
 .organizer-affiliation {
+  font-size: 12px;
   font-style: italic;
   margin: 5px 0;
 }
 .organizer-email {
   margin: 0;
+  font-size: 12px;
+
 }
+
+
+
 
 /* =============================================================================
    CONTATO
@@ -834,7 +841,7 @@ nav {
    CONTENT
    ========================================================================== */
 .content a {
-  color: #f0a303;
+  color: #3862c9; /* =# color links */
 }
 .content a:hover,
 .content a:focus {
@@ -870,8 +877,8 @@ ul.subject-list li {
   list-style: disc outside none;
   display: list-item;
   margin-left: 1em;
-  margin-bottom: 10px;
-  font-size: 120%; /* Adjust the font size as needed */
+  margin-bottom: 15px; /* Adjust if needed in media */
+  font-size: 150%; /* Adjust the font size as needed */
 }
 
 

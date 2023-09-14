@@ -28,8 +28,8 @@ params:
     - speakers
     - sponsors
     #- partners
+    - organizers 
     - location
-    - organizers # change better for organizers 
 
   # Titles which you can translate to other languages
   Titles:
@@ -76,109 +76,105 @@ params:
   Schedule:
 
     - name: "Check-in & Opening"
-      time: "Monday - 9h00"
+      time: "Monday"
 
-    - name: "Name Surname"
-      photo: "/img/speaker1.png"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Cat Foundation"
+    # - name: "Check-in & Opening"
+    #   time: "Monday - 9h00"
+
+    # - name: "Name Surname"
+    #   photo: "/img/speaker1.png"
+    #   bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+    #   company: "Cat Foundation"
+    #   #link:
+    #   #  href: "http://twitter.com/linus"
+    #   #  text: "@linus"
+    #   presentation:
+    #     title: "Speaker Name"
+    #     time: "Monday - 9h30"
+
+    - name: "TBA" # Name Surname
+      photo: "/img/unknown1.png"
+      #bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      company: "TBA" # Cat Foundation
       #link:
       #  href: "http://twitter.com/linus"
       #  text: "@linus"
       presentation:
-        title: "Speaker Name"
-        time: "Monday - 9h30"
+        title: "Plenary Talk" #Speaker Name
+        time: "Monday"
 
-    - name: "Coffee-break"
-      time: "Monday - 11h00"
+    - name: "Long Talks"
+      time: "Monday"
 
-    - name: "Pitch talks"
-      time: "Monday - 12h00"
+    - name: "Pitch Talks + Poster"
+      time: "Monday"
 
-    - name: "Lunch break"
-      time: "Monday - 13h00"
+    - name: "Join LoG Conference"
+      time: "Monday"
 
-    - name: "Pitch talks"
-      time: "Monday - 12h00"
 
-    - name: "Coffee-break"
-      time: "Monday - 15h00"
+    - name: "TBA" # Name and Surname
+      photo: "/img/unknown1.png"
+      #bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      company: "TBA" # Cat Foundation
+      #link: 
+      #  href: "http://twitter.com/linus"
+      #  text: "@linus"
+      presentation:
+        title: "Plenary Talks" # Speaker Name
+        time: "Tuesday"
 
-    - name: "Pitch talks"
-      time: "Monday - 16h00"
 
-    - name: "Name Surname"
-      photo: "/img/speaker2.png"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Cat Foundation"
+    - name: "Long Talks"
+      time: "Tuesday"
+
+    - name: "Pitch Talks + Poster"
+      time: "Tuesday"
+
+    - name: "Join LoG Conference"
+      time: "Tuesday"
+
+
+    - name: "TBA" #Name Surname
+      photo: "/img/unknown1.png"
+      #bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      company: "TBA" # Cat Foundation
       #link:
       #  href: "http://twitter.com/linus"
       #  text: "@linus"
       presentation:
-        title: "Speaker Name"
-        time: "Tuesday - 9h30"
+        title: "TBA" # Speaker Name
+        time: "Wednesday"
 
-    - name: "Pitch talks"
-      time: "Tuesday - 12h00"
+    - name: "Long Talks"
+      time: "Wednesday"
 
-    - name: "Lunch"
-      time: "Tuesday - 13h00"
+    - name: "Pitch Talks + Poster"
+      time: "Wednesday"
 
-    - name: "Pitch talks"
-      time: "Tuesday - 12h00"
-
-    - name: "Coffee-break"
-      time: "Tuesday - 15h00"
-
-    - name: "Pitch talks"
-      time: "Tuesday - 16h00"
-
-    - name: "Name Surname"
-      photo: "/img/speaker3.png"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Cat Foundation"
-      #link:
-      #  href: "http://twitter.com/linus"
-      #  text: "@linus"
-      presentation:
-        title: "Speaker Name"
-        time: "Wednesday - 9h30"
-        
-    - name: "Lunch"
-      time: "Wednesday - 12h00"
-
-    - name: "Pitch talks"
-      time: "Wednesday - 12h00"
-
-    - name: "Lunch"
-      time: "Wednesday - 13h00"
-
-    - name: "Pitch talks"
-      time: "Wednesday - 16h00"
-
-    - name: "Closing remarks"
-      time: "Wednesday - 17h00"
+    - name: "Join LoG Conference"
+      time: "Wednesday"
 
 
   # List of Contacts
   Contacts:
 
     - name: "Antonio G. Marqués"
-      logo: "/img/contact1.jpg"
-      email: "a@a.gal"
-      affiliation: "URJC"
+      logo: "/img/antoniogmarques.jpg"
+      email: "antonio.garcia.marques@urjc.es"
+      affiliation: "Universidad Rey Juan Carlos"
       #url: "https://gohugo.io"
 
     - name: "Mikel Hernaez"
-      logo: "/img/contact1.jpg"
-      email: "a@a.gal"
-      affiliation: "CIMA"
+      logo: "/img/mikelhernaez.jpg"
+      email: "mhernaez@unav.es"
+      affiliation: "CIMA Universidad de Navarra"
       #url: "https://gohugo.io"
 
     - name: "Uxia Veleiro"
-      logo: "/img/contact1.jpg"
+      logo: "/img/uxiaveleiro.jpg"
       email: "uveleirocar@unav.es"
-      affiliation: "CIMA"
-      url: "https://www.linkedin.com/in/uxiaveleiro/"
+      affiliation: "CIMA Universidad de Navarra"
+      #url: "https://www.linkedin.com/in/uxiaveleiro/"
 
 
