@@ -1,5 +1,5 @@
 baseurl: "https://example.org/"
-title: "Conference name"
+title: "LoG Madrid"
 canonifyurls: true
 theme: "hugo-conference"
 
@@ -7,9 +7,9 @@ GoogleAnalytics: ""
 
 params:
   # Conference info
-  Name: "Conference name"
+  Name: "LoG Madrid"
   Description: "Conference description"
-  Date: "November DD - DD th"
+  Date: "November 27 - 29 th"
   #Price: "Only XX€" # If your event is free, just comment this line
   Venue: "Madrid"
   Address: "Edificio XXX, Calle XXX, NN"
@@ -27,7 +27,7 @@ params:
     - schedule
     - speakers
     - sponsors
-    - partners
+    #- partners
     - location
     - organizers # change better for organizers 
 
@@ -45,9 +45,9 @@ params:
 
   # The Call To Action button at the header,
   # If you don't want this, just remove the callToAction property.
-  CallToAction:
-    text: "Call for Talks"
-    link: "#cfp" ## CHANGE THIS !!!
+  #CallToAction:
+  #  text: "Call for Talks"
+  #  link: "#cfp" ## CHANGE THIS !!!
 
   # Fork me on GitHub, if you don't want this, just remove the forkButton property
   #ForkButton:
@@ -55,12 +55,13 @@ params:
 
   # List of Sponsors
   Sponsors:
-    - name: "Michi"
-      logo: "/img/michi-cool.png"
-      #url: "http://gohugo.io"
-    - name: "Michi"
-      logo: "/img/michi-cool-2.png"
-      #url: "http://gohugo.io"
+    - name: "CIMA BioComp"
+      logo: "/img/LogoCima.png"
+      url: "https://cima.cun.es/investigacion/programas-investigacion/programa-investigacion-biologia-computacional"
+
+    - name: "Grupo Antonio G. Marques"
+      logo: "/img/logo_urjc-2.jpg"
+      url: "https://www.tsc.urjc.es/~amarques/"
 
   # List of Partners
   Partners:
@@ -161,21 +162,23 @@ params:
 
   # List of Contacts
   Contacts:
-    - name: "Name Surname"
+
+    - name: "Antonio G. Marqués"
       logo: "/img/contact1.jpg"
       email: "a@a.gal"
-      affiliation: "Xanceda"
+      affiliation: "URJC"
+      #url: "https://gohugo.io"
+
+    - name: "Mikel Hernaez"
+      logo: "/img/contact1.jpg"
+      email: "a@a.gal"
+      affiliation: "CIMA"
+      #url: "https://gohugo.io"
+
+    - name: "Uxia Veleiro"
+      logo: "/img/contact1.jpg"
+      email: "uveleirocar@unav.es"
+      affiliation: "CIMA"
       url: "https://www.linkedin.com/in/uxiaveleiro/"
 
-    - name: "Name Surname"
-      logo: "/img/contact1.jpg"
-      email: "a@a.gal"
-      affiliation: "Xanceda"
-      #url: "https://gohugo.io"
-
-    - name: "Name Surname"
-      logo: "/img/contact1.jpg"
-      email: "a@a.gal"
-      affiliation: "Xanceda"
-      #url: "https://gohugo.io"
 
