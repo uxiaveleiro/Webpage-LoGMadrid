@@ -798,11 +798,12 @@ nav {
    HEADER
    ========================================================================== */
 .header {
-  /* =background-image: url('../img/cover-2.jpg');*/
+  background-image: url('image.jpg');
   background-color: #2b2b2b;
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100% auto;
+  backdrop-filter: blur(0px); /* Adjust the blur value as needed */
 }
 .logo-link,
 .tagline,

@@ -1,4 +1,4 @@
-baseurl: "https://example.org/"
+baseurl: "https://logmeetupmadrid.github.io/"
 title: "LoG Madrid"
 canonifyurls: true
 theme: "hugo-conference"
@@ -8,7 +8,7 @@ GoogleAnalytics: ""
 params:
   # Conference info
   Name: "LoG Madrid"
-  Description: "Conference description"
+  Description: "LoG Meet Up Madrid"
   Date: "November 27 - 29 th"
   #Price: "Only XX€" # If your event is free, just comment this line
   Venue: "Madrid"
