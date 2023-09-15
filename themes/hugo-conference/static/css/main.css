@@ -803,7 +803,17 @@ nav {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100% auto;
-  backdrop-filter: blur(0px); /* Adjust the blur value as needed */
+  height: 220px; /* Adjust the height value as needed 150 media*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  text-align: center; /* Center text horizontally */
+}
+/* Media query for screens with a maximum width of 768px (adjust as needed) */
+@media screen and (max-width: 768px) {
+  .header {
+    height: 150px; /* Adjust the height value for mobile devices */
+  }
 }
 .logo-link,
 .tagline,
