@@ -554,6 +554,33 @@ ORGANIZERS
 }
 
 
+/* icons */
+
+
+/* Modify the CSS for the icon-links div */
+.icon-links {
+  display: flex; /* Use flexbox to arrange icons horizontally */
+  align-items: center; /* Center icons vertically */
+  margin-top: 10px; /* Add space between the image and icons */
+}
+
+
+.icon-links a {
+  font-size: 20px; /* Adjust the font size for smaller icons */
+  color: #0077B5;
+  text-decoration: none;
+  margin-left: 20px; /* Add space between icons */
+  margin-right: 0px; /* Add space between icons */
+}
+
+.icon-links a:last-child {
+  margin-right: 0; /* Remove the margin from the last icon */
+}
+
+.icon-links a:hover {
+  color: #4285F4;
+}
+
 
 
 /* =============================================================================

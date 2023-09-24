@@ -26,10 +26,18 @@
         <p class="organizer-name">{{ .name }}</p>
         <p class="organizer-affiliation">{{ .affiliation }}</p>
         <p class="organizer-email">{{ .email }}</p>
+        <div class="icon-links">
+          <a href="{{ $contact.home }}" target="_blank"><i class="fas fa-home"></i></a> <!-- Home icon -->
+          <a href="{{ $contact.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a> <!-- LinkedIn icon -->
+          <a href="{{ $contact.googleScholar }}" target="_blank"><i class="fas fa-graduation-cap"></i></a> <!-- Google Scholar icon -->
+        </div>
+
       </div>
     </li>
   {{ end }}
 </ul>
+
+
 
 
 <!--

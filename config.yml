@@ -164,17 +164,24 @@ params:
       email: "antonio.garcia.marques@urjc.es"
       affiliation: "Universidad Rey Juan Carlos"
       #url: "https://gohugo.io"
+      home: "https://tsc.urjc.es/~amarques/" 
+      linkedin: "https://es.linkedin.com/in/antonio-garc%C3%ADa-marqu%C3%A9s-1ba65254" 
+      googleScholar: "https://scholar.google.com/citations?user=d05JMMkAAAAJ&hl=en" 
 
     - name: "Mikel Hernaez"
       logo: "/img/mikelhernaez.jpg"
       email: "mhernaez@unav.es"
       affiliation: "CIMA Universidad de Navarra"
-      #url: "https://gohugo.io"
+      home: "https://mikelhernaez.github.io/" 
+      linkedin: "https://www.linkedin.com/in/mikel-hernaez-ab168332" 
+      googleScholar: "https://scholar.google.es/citations?user=-mh8RQ8AAAAJ&hl=en" 
 
     - name: "Uxia Veleiro"
       logo: "/img/uxiaveleiro.jpg"
       email: "uveleirocar@unav.es"
       affiliation: "CIMA Universidad de Navarra"
       #url: "https://www.linkedin.com/in/uxiaveleiro/"
-
+      home: "https://uxiaveleiro.github.io/" # Add the home URL here
+      linkedin: "https://es.linkedin.com/in/uxiaveleiro/" # Add the LinkedIn URL here
+      googleScholar: "https://scholar.google.es/citations?user=E5T8cZUAAAAJ&hl=en" # Add the Google Scholar URL here
 
