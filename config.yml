@@ -55,22 +55,23 @@ params:
 
   # List of Sponsors
   Sponsors:
-    - name: "CIMA BioComp"
-      logo: "/img/LogoCima.png"
-      url: "https://cima.cun.es/investigacion/programas-investigacion/programa-investigacion-biologia-computacional"
 
     - name: "Grupo Antonio G. Marques"
       logo: "/img/logo_urjc-2.jpg"
       url: "https://www.tsc.urjc.es/~amarques/"
 
+    - name: "CIMA BioComp"
+      logo: "/img/LogoCima.png"
+      url: "https://cima.cun.es/investigacion/programas-investigacion/programa-investigacion-biologia-computacional"
+
   # List of Partners
-  Partners:
-    - name: "Michi"
-      logo: "/img/paw.png"
-      #url: "https://gohugo.io"
-    - name: "Michi"
-      logo: "/img/paw.png"
-      #url: "http://braziljs.org"
+  # Partners:
+  #   - name: "Michi"
+  #     logo: "/img/paw.png"
+  #     #url: "https://gohugo.io"
+  #   - name: "Michi"
+  #     logo: "/img/paw.png"
+  #     #url: "http://braziljs.org"
 
   # The entire schedule
   Schedule:
@@ -78,29 +79,15 @@ params:
     - name: "Check-in & Opening"
       time: "Monday"
 
-    # - name: "Check-in & Opening"
-    #   time: "Monday - 9h00"
-
-    # - name: "Name Surname"
-    #   photo: "/img/speaker1.png"
-    #   bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-    #   company: "Cat Foundation"
-    #   #link:
-    #   #  href: "http://twitter.com/linus"
-    #   #  text: "@linus"
-    #   presentation:
-    #     title: "Speaker Name"
-    #     time: "Monday - 9h30"
-
-    - name: "TBA" # Name Surname
-      photo: "/img/unknown1.png"
-      #bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "TBA" # Cat Foundation
-      #link:
-      #  href: "http://twitter.com/linus"
-      #  text: "@linus"
+    - name: "Plenary Talk Title: TBA" # Name Surname
+      photo: "/img/reinhard_1_.jpg"
+      bio: "Professor for Machine Learning at the Department of Computer Engineering at TUM (Technical University of Munich)."
+      company: "Technical University of Munich" # Cat Foundation
+      link:
+        href: "https://www.professoren.tum.de/en/heckel-reinhard"
+      #  text: "WebPage"
       presentation:
-        title: "Plenary Talk" #Speaker Name
+        title: "Reinhard Heckel" #Speaker Name
         time: "Monday"
 
     - name: "Long Talks"
@@ -113,15 +100,15 @@ params:
       time: "Monday"
 
 
-    - name: "TBA" # Name and Surname
-      photo: "/img/unknown1.png"
-      #bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "TBA" # Cat Foundation
-      #link: 
-      #  href: "http://twitter.com/linus"
+    - name: "Plenary Talk Title: TBA" # Name Surname
+      photo: "/img/dokmanic.jpg"
+      bio: "Associate Professor for Data-Analytics at the Department of Mathematics and Computer Science of the University of Basel."      #company: "TBA" # Cat Foundation
+      company: "University of Basel"
+      link: 
+        href: "https://dmi.unibas.ch/de/personen/ivan-dokmanic/"
       #  text: "@linus"
       presentation:
-        title: "Plenary Talk" # Speaker Name
+        title: "Ivan Dokmanić " # Speaker Name
         time: "Tuesday"
 
 
@@ -135,15 +122,16 @@ params:
       time: "Tuesday"
 
 
-    - name: "TBA" #Name Surname
-      photo: "/img/unknown1.png"
-      #bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "TBA" # Cat Foundation
-      #link:
-      #  href: "http://twitter.com/linus"
-      #  text: "@linus"
+    - name: "Plenary Talk Title: TBA" # Name Surname
+      photo: "/img/xiaowen.jpg"
+      url: "www.example.org"
+      bio: " Associate professor in the Department of Engineering Science at the University of Oxford."
+      company: "University of Oxford" # Cat Foundation
+      link:
+        href: "https://eng.ox.ac.uk/people/xiaowen-dong/"
+        #text: "@linus"
       presentation:
-        title: "Plenary Talk" # Speaker Name
+        title: "Xiaowen Dong" # Speaker Name
         time: "Wednesday"
 
     - name: "Long Talks"
