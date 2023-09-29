@@ -1,3 +1,4 @@
+<!-- old only does href
 <nav id="nav">
   <ul class="wrapper">
     {{ range $section := $.Site.Params.Sections }}
@@ -11,3 +12,16 @@
 </nav>
 
 <hr>
+-->
+
+<nav id="nav">
+  <ul class="wrapper">
+    {{ range $section := $.Site.Params.Sections }}
+      <li class="nav-item">
+        <a href="#" data-section="{{ $section }}" class="nav-link">
+          {{ index $.Site.Params.Titles $section }}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</nav>

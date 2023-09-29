@@ -40,6 +40,9 @@
 
   <link rel="stylesheet" type="text/css" href="/css/main.css">
 
+  <!-- Include jQuery from the CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
   <div class="global">
@@ -73,5 +76,26 @@
   {{ end }}
   {{ end }}
   {{ template "_internal/google_analytics_async.html" . }}
+
+
+
+  <script>
+    $(document).ready(function () {
+      // Smooth scrolling for navigation links
+      $('.nav-link').on('click', function (e) {
+        e.preventDefault(); // Prevent the default link behavior
+
+        var section = $(this).data('section');
+        var target = $('#' + section); // Get the target section by ID
+        var offset = target.offset().top; // Get the top position of the target section
+
+        // Animate scrolling to the target section
+        $('html, body').animate({
+          scrollTop: offset
+        }, 1000); // You can adjust the duration (in milliseconds) for smooth scrolling
+      });
+    });
+  </script>
+  
 </body>
 </html>
