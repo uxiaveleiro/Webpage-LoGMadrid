@@ -171,5 +171,13 @@ params:
       #url: "https://www.linkedin.com/in/uxiaveleiro/"
       home: "https://uxiaveleiro.github.io/"
       linkedin: "https://es.linkedin.com/in/uxiaveleiro/" 
-      googleScholar: "https://scholar.google.es/citations?user=E5T8cZUAAAAJ&hl=en" # Add the Google Scholar URL here
+      googleScholar: "https://scholar.google.es/citations?user=E5T8cZUAAAAJ&hl=en" # Add the Google Scholar URL here 
+
+    - name: "Samuel Rey"
+      logo: "/img/SamuelRey.jpg"
+      email: "samuel.rey.escudero@urjc.es"
+      affiliation: "Universidad Rey Juan Carlos"
+      home: "https://gestion2.urjc.es/pdi/ver/samuel.rey.escudero"
+      linkedin: "https://www.linkedin.com/in/samuel-rey-escudero-52510abb/" 
+      googleScholar: "https://scholar.google.com/citations?user=fUy5BM4AAAAJ&hl=es"
 
