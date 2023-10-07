@@ -101,7 +101,7 @@ params:
 
 
     - name: "Plenary Talk Title: TBA" # Name Surname
-      photo: "/img/dokmanic.jpg"
+      photo: "/img/ivan2.jpeg"
       bio: "Associate Professor for Data-Analytics at the Department of Mathematics and Computer Science of the University of Basel."      #company: "TBA" # Cat Foundation
       company: "University of Basel"
       link: 
