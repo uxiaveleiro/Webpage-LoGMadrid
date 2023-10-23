@@ -56,13 +56,22 @@ params:
   # List of Sponsors
   Sponsors:
 
-    - name: "Grupo Antonio G. Marques"
-      logo: "/img/logo_urjc-2.jpg"
-      url: "https://www.tsc.urjc.es/~amarques/"
+    - name: "URJC"
+      logo: "/img/logo_urjc-3.jpg"
+      url: "https://www.urjc.es"
 
     - name: "CIMA BioComp"
-      logo: "/img/LogoCima.png"
-      url: "https://cima.cun.es/investigacion/programas-investigacion/programa-investigacion-biologia-computacional"
+      logo: "/img/LogoCima_2.png"
+      url: "https://cima.cun.es"
+
+    - name: "ELLIS Madrid"
+      logo: "/img/ellis.png"
+      url: "https://ellismadrid.es"
+
+    - name: "CAM"
+      logo: "/img/CAM_edit_2.png"
+      url: "https://www.comunidad.madrid"
+
 
   # List of Partners
   # Partners:
