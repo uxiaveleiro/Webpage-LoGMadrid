@@ -38,7 +38,7 @@ params:
     cfp: "Call for talks"
     location: "The Venue"
     schedule: "Schedule"
-    speakers: "Speakers"
+    speakers: "Keynote Speakers"
     sponsors: "Sponsors"
     partners: "Partners"
     organizers: "Organizers"
