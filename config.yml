@@ -74,10 +74,12 @@ params:
     - name: "Opening Madrid LoG"
       time: "Monday 10h50-11h00"
 
-    - name: "Plenary Talk Title: TBA" # Name Surname
+    - name: "On the stability of spectral graph filters and beyond: A topological perspective." # Name Surname
       photo: "/img/xiaowen.jpg"
       url: "www.example.org"
-      bio: " Associate professor in the Department of Engineering Science at the University of Oxford."
+      abstract: "Graph-based signal processing and machine learning are recent techniques that have been developed to handle graph-structured data and have seen applications in such diverse fields as drug discovery, fake news detection, and traffic prediction. Despite the encouraging empirical results, a theoretical understanding of the robustness of these models against perturbation to the input graph domain has been lacking. In this talk, I will present our results on the stability bounds of spectral graph filters as well as other recent work on the robustness of graph machine learning models. A commonality of these studies is that they all share a topological perspective, that is, linking robustness to topological properties of the graph domain and perturbation. This contributes to a better understanding of robustness hence the deployment of graph-based models in real-world scenarios." 
+      bio: "Xiaowen Dong is an associate professor in the Department of Engineering Science at the University of Oxford, where he is a member of both the Machine Learning Research Group and the Oxford-Man Institute. Prior to joining Oxford, he was a postdoctoral associate in the MIT Media Lab, where he remains as a research affiliate, and received his PhD degree from the Swiss Federal Institute of Technology (EPFL), Lausanne, Switzerland. His main research interests concern signal processing and machine learning techniques for analysing network data, and their applications in social and economic sciences."
+      #"Associate professor in the Department of Engineering Science at the University of Oxford."
       company: "University of Oxford" # Cat Foundation
       link:
         href: "https://eng.ox.ac.uk/people/xiaowen-dong/"
@@ -106,9 +108,11 @@ params:
 
 
     ##### TUESDAY
-    - name: "Plenary Talk Title: TBA" # Name Surname
+    - name: "Unpacking Data Needs for Deep Learning Based Imaging" # Name Surname
       photo: "/img/reinhard_1_.jpg"
-      bio: "Professor for Machine Learning at the Department of Computer Engineering at TUM (Technical University of Munich)."
+      abstract: "Deep neural networks trained on example images enable a new generation of consumer, medical, and scientific imaging systems. I will start this talk with highlighting the role of training data. Surprisingly little data is needed for obtaining state-of-the-art performance. Moreover, it is possible to learn effectively without clean ground-truth data with self-supervised learning methods. However, the excellent performance of deep networks for imaging can be deceiving, as it is usually measured by training and testing on similar looking data, say on data from one hospital. By evaluating neural networks in a variety of practical scenarios, for example by training and evaluating networks on data from different hospitals, we identified a key challenge in deep learning based imaging: robustness to distribution shifts. Finally, I will discuss model and data driven approaches for building robust deep learning based imaging methods."
+      bio: "Reinhard Heckel is a Rudolf Moessbauer assistant professor in the Department of Computer Engineering at the Technical University of Munich, and an adjunct assistant professor at Rice University, where he was an assistant professor in the ECE department from 2017-2019. Before that, he was a postdoctoral researcher in the Department of Electrical Engineering and Computer Sciences at the University of California, Berkeley, and a researcher at the Cognitive Computing & Computational Sciences Department at IBM Research Zurich. He completed his PhD in electrical engineering in 2014 at ETH Zurich and was a visiting PhD student at the Statistics Department at Stanford University. Reinhard is working in the intersection of machine learning and signal/information processing with a current focus on deep networks for solving inverse problems, developing foundations and methods for machine learning, and DNA data storage."
+        #"Professor for Machine Learning at the Department of Computer Engineering at TUM (Technical University of Munich)."
       company: "Technical University of Munich" # Cat Foundation
       link:
         href: "https://www.professoren.tum.de/en/heckel-reinhard"
@@ -146,6 +150,7 @@ params:
     ##### WEDNESDAY
     - name: "Plenary Talk Title: TBA" # Name Surname
       photo: "/img/ivan2.jpeg"
+      abstract: "TBA"
       bio: "Associate Professor at the Department of Mathematics and Computer Science of the University of Basel."      #company: "TBA" # Cat Foundation
       company: "University of Basel"
       link: 

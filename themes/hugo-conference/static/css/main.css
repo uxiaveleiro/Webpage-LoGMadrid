@@ -433,7 +433,7 @@ ul.dates-list .list-title::before {
   margin-bottom: 1em;
 }
 .speech-time {
-  font-size: 18px;
+  font-size: 17px;
   padding: 10px 15px;
   letter-spacing: -0.03em;
 }
@@ -1117,6 +1117,20 @@ ul.subject-list li {
 .schedule-lunch,
 .schedule-other {
   color: #214f87;
+}
+
+/* Default styles for the responsive image */
+.responsive-schedule {
+    width: 900px; /* Set the image width to 300px on larger screens */
+    /* height: 400px; Set the image height to 200px on larger screens */
+}
+
+/* Media query for screens with a maximum width of 600px (typical for mobile phones) */
+@media screen {
+    .responsive-schedule {
+        max-width: 90%;
+        height: auto /* Reduce the image width on smaller screens */
+    }
 }
 /* =============================================================================
    SPONSORS
