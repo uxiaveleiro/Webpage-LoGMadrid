@@ -26,12 +26,13 @@ params:
     - cfp
     - schedule
     - speakers
+    #- selected_talks # comment first upload
     - sponsors
     #- partners
     - organizers 
     - location
 
-  # Titles which you can translate to other languages
+  # Titles 
   Titles:
     about: "About"
     registration: "Registration"
@@ -39,19 +40,10 @@ params:
     location: "The Venue"
     schedule: "Schedule"
     speakers: "Keynote Speakers"
+    selected_talks: "Selected Talks"
     sponsors: "Sponsors"
     partners: "Partners"
     organizers: "Organizers"
-
-  # The Call To Action button at the header,
-  # If you don't want this, just remove the callToAction property.
-  #CallToAction:
-  #  text: "Call for Talks"
-  #  link: "#cfp" ## CHANGE THIS !!!
-
-  # Fork me on GitHub, if you don't want this, just remove the forkButton property
-  #ForkButton:
-  #  repository: "https://github.com/jweslley/hugo-conference/"
 
   # List of Sponsors
   Sponsors:
@@ -73,63 +65,14 @@ params:
       url: "https://www.comunidad.madrid"
 
 
-  # List of Partners
-  # Partners:
-  #   - name: "Michi"
-  #     logo: "/img/paw.png"
-  #     #url: "https://gohugo.io"
-  #   - name: "Michi"
-  #     logo: "/img/paw.png"
-  #     #url: "http://braziljs.org"
-
   # The entire schedule
   Schedule:
 
-    - name: "Check-in & Opening"
-      time: "Monday"
+    - name: "Registration and Reception"
+      time: "Monday 9h30-10h30"
 
-    - name: "Plenary Talk Title: TBA" # Name Surname
-      photo: "/img/reinhard_1_.jpg"
-      bio: "Professor for Machine Learning at the Department of Computer Engineering at TUM (Technical University of Munich)."
-      company: "Technical University of Munich" # Cat Foundation
-      link:
-        href: "https://www.professoren.tum.de/en/heckel-reinhard"
-      #  text: "WebPage"
-      presentation:
-        title: "Reinhard Heckel" #Speaker Name
-        time: "Monday"
-
-    - name: "Long Talks"
-      time: "Monday"
-
-    - name: "Pitch Talks + Poster"
-      time: "Monday"
-
-    - name: "Join LoG Conference"
-      time: "Monday"
-
-
-    - name: "Plenary Talk Title: TBA" # Name Surname
-      photo: "/img/ivan2.jpeg"
-      bio: "Associate Professor at the Department of Mathematics and Computer Science of the University of Basel."      #company: "TBA" # Cat Foundation
-      company: "University of Basel"
-      link: 
-        href: "https://dmi.unibas.ch/de/personen/ivan-dokmanic/"
-      #  text: "@linus"
-      presentation:
-        title: "Ivan Dokmanić " # Speaker Name
-        time: "Tuesday"
-
-
-    - name: "Long Talks"
-      time: "Tuesday"
-
-    - name: "Pitch Talks + Poster"
-      time: "Tuesday"
-
-    - name: "Join LoG Conference"
-      time: "Tuesday"
-
+    - name: "Opening Madrid LoG"
+      time: "Monday 10h50-11h00"
 
     - name: "Plenary Talk Title: TBA" # Name Surname
       photo: "/img/xiaowen.jpg"
@@ -141,16 +84,202 @@ params:
         #text: "@linus"
       presentation:
         title: "Xiaowen Dong" # Speaker Name
-        time: "Wednesday"
+        time: "Monday 11h00-12h00"
 
-    - name: "Long Talks"
-      time: "Wednesday"
+    - name: "Refreshments"
+      time: "Monday 12h00-12h20"
 
-    - name: "Pitch Talks + Poster"
-      time: "Wednesday"
+    - name: "Sessions Madrid LoG (Mon-1)"
+      time: "Monday 12h20-14h00"
 
-    - name: "Join LoG Conference"
-      time: "Wednesday"
+    - name: "Lunch time (lunch not provided)"
+      time: "Monday 14h00-16h30"
+
+    - name: "Program LoG (opening)"
+      time: "Monday 16h30-17h00"
+
+    - name: "Program LoG (oral)"
+      time: "Monday 17h00-18h00"
+
+    - name: "Program LoG (keynote)"
+      time: "Monday 18h00-19h00"
+
+
+    ##### TUESDAY
+    - name: "Plenary Talk Title: TBA" # Name Surname
+      photo: "/img/reinhard_1_.jpg"
+      bio: "Professor for Machine Learning at the Department of Computer Engineering at TUM (Technical University of Munich)."
+      company: "Technical University of Munich" # Cat Foundation
+      link:
+        href: "https://www.professoren.tum.de/en/heckel-reinhard"
+      #  text: "WebPage"
+      presentation:
+        title: "Reinhard Heckel" #Speaker Name
+        time: "Tuesday - 09h30-10h30"
+
+    - name: "Coffee Break"
+      time: "Tuesday - 10h30-11h00"
+
+
+    - name: "Sessions Madrid LoG (Tue-1)"
+      time: "Tuesday - 11h00-12h20"
+
+    - name: "Refreshments"
+      time: "Tuesday - 12h20-12h40"
+
+    - name: "Sessions Madrid LoG (Tue-2)"
+      time: "Tuesday - 12h40-14h00"
+
+    - name: "Lunch time (lunch not provided)"
+      time: "Tuesday - 14h00-16h00"
+
+    - name: "Program LoG (keynote)"
+      time: "Tuesday - 16h00-17h00"
+
+    - name: "Refreshments"
+      time: "Tuesday - 17h00-17h30"
+
+    - name: "Discussion"
+      time: "Tuesday - 17h30-18h00"
+
+
+    ##### WEDNESDAY
+    - name: "Plenary Talk Title: TBA" # Name Surname
+      photo: "/img/ivan2.jpeg"
+      bio: "Associate Professor at the Department of Mathematics and Computer Science of the University of Basel."      #company: "TBA" # Cat Foundation
+      company: "University of Basel"
+      link: 
+        href: "https://dmi.unibas.ch/de/personen/ivan-dokmanic/"
+      #  text: "@linus"
+      presentation:
+        title: "Ivan Dokmanić " # Speaker Name
+        time: "Wednesday - 09h30-10h30"
+
+
+    - name: "Coffee Break"
+      time: "Wednesday - 10h30-11h00"
+
+    - name: "Sessions Madrid LoG (Wed-1)"
+      time: "Wednesday - 11h00-12h20"
+
+    - name: "Refreshments"
+      time: "Wednesday - 12h20-12h40"
+
+    - name: "Sessions Madrid LoG (Wed-2)"
+      time: "Wednesday - 12h40-14h00"
+
+    - name: "Lunch time (lunch not provided)"
+      time: "Wednesday - 14h00-16h00"
+
+    - name: "Program LoG (keynote)"
+      time: "Wednesday - 16h00-17h00"
+
+    - name: "Coffee Break"
+      time: "Wednesday - 17h00-17h30"
+
+    - name: "Program LoG (keynote)"
+      time: "Wednesday - 17h30-18h00"
+
+    - name: "Program LoG (tutorials)"
+      time: "Wednesday - 18h00-19h00"
+
+    
+
+
+  selected_talks:
+
+  #### MONDAY 1
+  - slot: "Monday-1 12:20 - 14:00"
+    title: "Topological Deep Learning: Going Beyond Graph Data." 
+    speaker: "Mustafa Haji.j"
+
+  - slot: "Monday-1 12:20 - 14:00"
+    title: "Learning Types of Hierarchical Relationships on Complex Class Labelling Systems"
+    speaker: "Connor Clarkson"
+
+  - slot: "Monday-1 12:20 - 14:00"
+    title: "Structure-Preserving Graph Neural Networks"
+    speaker: "Alberto Badias"
+
+  - slot: "Monday-1 12:20 - 14:00"
+    title: "ResolvNet: A Graph Convolutional Network with multi-scale Consistency"
+    speaker: "Christian Koke"
+
+  - slot: "Monday-1 12:20 - 14:00"
+    title: "Robust Graph Neural Network based on Graph Denoising"
+    speaker: "Samuel Rey"
+
+  #### TUESDAY 1
+  - slot: "Tuesday-1 11:00 - 12:40"
+    title: "Towards a more inductive world for drug repurposing approaches"
+    speaker: "Jesus de la Fuente"
+
+  - slot: "Tuesday-1 11:00 - 12:40"
+    title: "Knowledge Graph Reasoning for Drug Repurposing Using Prescription Data in Norway"
+    speaker: "Asieh Abolpour Mofrad"
+
+  - slot: "Tuesday-1 11:00 - 12:40"
+    title: "A molecular foundation model for drug discovery based on molecular graphs"
+    speaker: "Oscar Mendez-Lucio"
+
+  - slot: "Tuesday-1 11:00 - 12:40"
+    title: "GeNNius: An ultrafast drug-target interaction inference method based on graph neural networks"
+    speaker: "Uxía Veleiro"
+
+
+  #### TUESDAY 2
+  - slot: "Tuesday-2 12:40 - 14:00"
+    title: "A General Graph Convolution Theorem: Application to Dual Graph Inference"
+    speaker: "Geert Leus"
+
+  - slot: "Tuesday-2 12:40 - 14:00"
+    title: "Tensor completion using graph-based diffusion: a remote sensing image completion study"
+    speaker: "Iain Rolland"
+
+  - slot: "Tuesday-2 12:40 - 14:00"
+    title: "Recovering Missing Node Features with Local Structure-based Embeddings"
+    speaker: "Víctor M Tenorio"
+
+  - slot: "Tuesday-2 12:40 - 14:00"
+    title: "Learning Graphs and Simplicial Complexes from Data"
+    speaker: "Andrei Buciulea Vlas"
+
+  # WEDNESDAY 1
+  - slot: "Wednesday-1 11:00 - 12:40"
+    title: "Completing Missing Air Quality Data with Graph-Based Techniques"
+    speaker: "Michelle Wan"
+
+  - slot: "Wednesday-1 11:00 - 12:40"
+    title: "Using Graph Neural Networks to Predict Airport Congestion and Air Traffic Delays"
+    speaker: "Víctor M Tenorio"
+
+  - slot: "Wednesday-1 11:00 - 12:40"
+    title: "Spatio-Temporal Graphs and GNN for Antimicrobial Multidrug Resistance Prediction in Intensive Care Unit"
+    speaker: "Oscar Escudero"
+
+  - slot: "Wednesday-1 11:00 - 12:40"
+    title: "gMCSpy: Efficient and accurate computation of Genetic Minimal Cut Sets in Python"
+    speaker: "Carlos J Rodriguez"
+
+  ## WEDNESDAY 2
+  - slot: "Wednesday-2 12:40 - 14:00"
+    title: "Geometric deep learning reveals the spatiotemporal features of microscopic motion"
+    speaker: "Jesús Pineda"
+
+  - slot: "Wednesday-2 12:40 - 14:00"
+    title: "Asymmetry-Labeled DAGs: Representation, Learning and Causal Reasoning"
+    speaker: "Manuele Leonelli"
+
+  - slot: "Wednesday-2 12:40 - 14:00"
+    title: "HoloNets: Spectral Convolutions do extend to Directed Graphs"
+    speaker: "Christian Koke"
+
+  - slot: "Wednesday-2 12:40 - 14:00"
+    title: "Graph-Based Dimensionality Reduction and Clustering for Earth and Life Sciences"
+    speaker: "Nathan Mankovich"
+
+
+
 
 
   # List of Contacts

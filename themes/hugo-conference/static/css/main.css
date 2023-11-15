@@ -487,6 +487,37 @@ ul.dates-list .list-title::before {
   font-size: 12px;
 }
 /* =============================================================================
+   SELECTED TALKS
+   ========================================================================== */
+
+/* Style the slot item */
+.slot-item {
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Style the talks in a slot */
+.talks-in-slot {
+  margin-top: 5px;
+}
+
+/* Style the talk item 
+.talk-item {
+  margin-bottom: 5px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+*/
+
+/* Style the talk info */
+.talk-info {
+  margin:0;
+}
+
+/* =============================================================================
    SPONSORS  and  PARTNERS
    ========================================================================== */
 .sponsor-item,
