@@ -148,9 +148,9 @@ params:
 
 
     ##### WEDNESDAY
-    - name: "Plenary Talk Title: TBA" # Name Surname
+    - name: "Statistical Mechanics of Graph Convolution Networks" # Name Surname
       photo: "/img/ivan2.jpeg"
-      abstract: "TBA"
+      abstract: "Graph neural networks (GNNs) excel in modeling relational data such as biological, social, and transportation networks, but the underpinnings of their success are elusive. Traditional complexity measures from statistical learning theory fail to account for observed phenomena like the double descent or the impact of relational semantics on generalization error. Motivated by experimental observations of ``transductive'' double descent in key networks and datasets, we use analytical tools from statistical physics and random matrix theory to precisely characterize generalization in simple graph convolution networks on the contextual stochastic block model. Our results illuminate the nuances of learning on homophilic versus heterophilic data and predict double descent whose existence in GNNs has been questioned by recent work. We show how risk is shaped by the interplay between the graph noise, feature noise, and the number of training labels. Our findings apply beyond stylized models, capturing qualitative trends in real-world GNNs and datasets. As a case in point, we use our analytic insights to improve performance of state-of-the-art graph convolution networks on heterophilic datasets."
       bio: "Associate Professor at the Department of Mathematics and Computer Science of the University of Basel."      #company: "TBA" # Cat Foundation
       company: "University of Basel"
       link: 
