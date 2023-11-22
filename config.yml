@@ -26,10 +26,10 @@ params:
     - cfp
     - schedule
     - speakers
-    #- selected_talks # comment first upload
+    - selected_talks # comment first upload
+    - organizers 
     - sponsors
     #- partners
-    - organizers 
     - location
 
   # Titles 
@@ -194,9 +194,6 @@ params:
   selected_talks:
 
   #### MONDAY 1
-  - slot: "Monday-1 12:20 - 14:00"
-    title: "Topological Deep Learning: Going Beyond Graph Data." 
-    speaker: "Mustafa Haji.j"
 
   - slot: "Monday-1 12:20 - 14:00"
     title: "Learning Types of Hierarchical Relationships on Complex Class Labelling Systems"
@@ -214,13 +211,17 @@ params:
     title: "Robust Graph Neural Network based on Graph Denoising"
     speaker: "Samuel Rey"
 
+  - slot: "Monday-1 12:20 - 14:00"
+    title: "Learning Graphs and Simplicial Complexes from Data" 
+    speaker: "Andrei Buciulea Vlas"
+
   #### TUESDAY 1
   - slot: "Tuesday-1 11:00 - 12:40"
     title: "Towards a more inductive world for drug repurposing approaches"
-    speaker: "Jesus de la Fuente"
+    speaker: "Jesús de la Fuente"
 
   - slot: "Tuesday-1 11:00 - 12:40"
-    title: "Knowledge Graph Reasoning for Drug Repurposing Using Prescription Data in Norway"
+    title: "Leveraging Temporal Graph Neural Networks for Drug Repurposing Using Prescription Data in Norway"
     speaker: "Asieh Abolpour Mofrad"
 
   - slot: "Tuesday-1 11:00 - 12:40"
@@ -246,17 +247,15 @@ params:
     speaker: "Víctor M Tenorio"
 
   - slot: "Tuesday-2 12:40 - 14:00"
-    title: "Learning Graphs and Simplicial Complexes from Data"
-    speaker: "Andrei Buciulea Vlas"
-
-  # WEDNESDAY 1
-  - slot: "Wednesday-1 11:00 - 12:40"
     title: "Completing Missing Air Quality Data with Graph-Based Techniques"
     speaker: "Michelle Wan"
 
+  # WEDNESDAY 1
+
+
   - slot: "Wednesday-1 11:00 - 12:40"
     title: "Using Graph Neural Networks to Predict Airport Congestion and Air Traffic Delays"
-    speaker: "Víctor M Tenorio"
+    speaker: "Guillermo Megías"
 
   - slot: "Wednesday-1 11:00 - 12:40"
     title: "Spatio-Temporal Graphs and GNN for Antimicrobial Multidrug Resistance Prediction in Intensive Care Unit"
@@ -266,10 +265,12 @@ params:
     title: "gMCSpy: Efficient and accurate computation of Genetic Minimal Cut Sets in Python"
     speaker: "Carlos J Rodriguez"
 
+  - slot: "Wednesday-1 11:00 - 12:40"
+    title: "Bayesian Graph Neural Networks, how to optimize a cellular network and provide confidence to our customers"
+    speaker: "Oscar Llorente Gonzalez"
+
+
   ## WEDNESDAY 2
-  - slot: "Wednesday-2 12:40 - 14:00"
-    title: "Geometric deep learning reveals the spatiotemporal features of microscopic motion"
-    speaker: "Jesús Pineda"
 
   - slot: "Wednesday-2 12:40 - 14:00"
     title: "Asymmetry-Labeled DAGs: Representation, Learning and Causal Reasoning"
