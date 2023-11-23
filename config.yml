@@ -69,10 +69,10 @@ params:
   Schedule:
 
     - name: "Registration and Reception"
-      time: "Monday 9h30-10h30"
+      time: "Monday 9h30-10h45"
 
     - name: "Opening Madrid LoG"
-      time: "Monday 10h50-11h00"
+      time: "Monday 10h45-11h00"
 
     - name: "On the stability of spectral graph filters and beyond: A topological perspective." # Name Surname
       photo: "/img/xiaowen.jpg"
