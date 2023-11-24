@@ -634,6 +634,27 @@ ORGANIZERS
 }
 
 
+/* Local Organiznig Team */
+
+.team-list {
+  list-style-type: none;
+  padding: 0;
+  columns: 2; /* Set the number of columns */
+  text-align: center;
+}
+
+.team-list-item {
+  display: block;
+  margin-bottom: 15px; /* Adjust this value to change the separation */
+  font-size: 19px; /* Adjust this value to change the font size */
+}
+
+@media screen and (max-width: 600px) {
+  .team-list-item {
+    margin-bottom: 14px; /* Adjust this value to change the separation */
+    font-size: 15px; /* Adjust this value for smaller font size */
+  }
+}
 
 /* =============================================================================
    CONTATO

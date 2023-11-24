@@ -325,3 +325,12 @@ params:
       linkedin: "https://www.linkedin.com/in/samuel-rey-escudero-52510abb/" 
       googleScholar: "https://scholar.google.com/citations?user=fUy5BM4AAAAJ&hl=es"
 
+  Team:
+    - name: "Andrei Buciulea"
+    - name: "Óscar Escudero"
+    - name: "Sergio Rozada"
+    - name: "Víctor Tenorio"
+    - name: "Bianca Radu"
+    - name: "Fernando Real Rojas"
+
+
