@@ -103,7 +103,7 @@ params:
     - name: "Program LoG (oral)"
       time: "Monday 17h00-18h00"
 
-    - name: "Program LoG (keynote)"
+    - name: "Program LoG (keynote Leskovec)"
       time: "Monday 18h00-19h00"
 
 
@@ -137,7 +137,7 @@ params:
     - name: "Lunch time (lunch not provided)"
       time: "Tuesday - 14h00-16h00"
 
-    - name: "Program LoG (keynote)"
+    - name: "Program LoG (keynote Loukas)"
       time: "Tuesday - 16h00-17h00"
 
     - name: "Refreshments"
@@ -176,17 +176,17 @@ params:
     - name: "Lunch time (lunch not provided)"
       time: "Wednesday - 14h00-16h00"
 
-    - name: "Program LoG (keynote)"
+    - name: "Program LoG (tutorials)"
       time: "Wednesday - 16h00-17h00"
 
     - name: "Coffee Break"
       time: "Wednesday - 17h00-17h30"
 
-    - name: "Program LoG (keynote)"
-      time: "Wednesday - 17h30-18h00"
-
     - name: "Program LoG (tutorials)"
-      time: "Wednesday - 18h00-19h00"
+      time: "Wednesday - 17h30-19h00"
+
+    - name: "Program LoG (keynote Jegelka)"
+      time: "Wednesday - 19h00-20h00"
 
     
 
