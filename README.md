@@ -1,1 +1,1 @@
-test readme
+GitHub repository for the Learning on Graphs Meet Up @ Madrid
