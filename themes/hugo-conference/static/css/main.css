@@ -28,7 +28,7 @@ details,
 figcaption,
 figure,
 footer {
-  font-size: 7;
+  font-size: 7px;
   font-style: italic;
   text-align: center;
   background-color: white; /* Add a white background color */
@@ -387,6 +387,28 @@ nav {
   padding: 19px;
   margin: 0 -20px 0;
 }
+
+ul.dates-list {
+  list-style: disc ;
+  padding-left: 20px;
+}
+
+ul.dates-list li {
+  list-style: disc outside none;
+  display: list-item;
+  margin-left: 1em;
+  margin-bottom: 10px;
+  font-size: 15px; /* Adjust the font size as needed */
+}
+
+ul.dates-list .list-title {
+  font-weight: bold; /* Make the title bold */
+}
+ul.dates-list .list-title::before {
+  content: ""; /* Hide the bullet for the title */
+}
+
+
 /* =============================================================================
    SPEAKER
    ========================================================================== */
@@ -411,7 +433,7 @@ nav {
   margin-bottom: 1em;
 }
 .speech-time {
-  font-size: 18px;
+  font-size: 17px;
   padding: 10px 15px;
   letter-spacing: -0.03em;
 }
@@ -421,6 +443,7 @@ nav {
 .speakers-item p {
   font-size: 1.4em;
 }
+
 /* =============================================================================
    SCHEDULE
    ========================================================================== */
@@ -464,6 +487,37 @@ nav {
   font-size: 12px;
 }
 /* =============================================================================
+   SELECTED TALKS
+   ========================================================================== */
+
+/* Style the slot item */
+.slot-item {
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Style the talks in a slot */
+.talks-in-slot {
+  margin-top: 5px;
+}
+
+/* Style the talk item 
+.talk-item {
+  margin-bottom: 5px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+*/
+
+/* Style the talk info */
+.talk-info {
+  margin:0;
+}
+
+/* =============================================================================
    SPONSORS  and  PARTNERS
    ========================================================================== */
 .sponsor-item,
@@ -471,14 +525,34 @@ nav {
   display: inline-block;
   margin: 0 30px 30px 0;
 }
+.sponsors-list {
+  text-align: center; /* Center the content within the ul element */
+}
 .sponsor--link,
 .partner-link {
   display: block;
-  width: 150px;
+  width: 340px;
   height: 150px;
+  /* width: 150px;
+  height: 150px;*/
   text-align: center;
-  vertical-align: middle;
+  vertical-align: center; /* middle */
   line-height: 150px;
+}
+
+/* Media query for phones (adjust the max-width to your specific needs) */
+@media screen and (max-width: 375px) {
+  .sponsor-item,
+  .partner-item {
+    /* Adjust margin or other properties as needed for smaller screens */
+    margin: 0 15px 15px 0;
+  }
+
+  .sponsor--link,
+  .partner-link {
+    width: 200px; /* Adjust the width for smaller screens */
+    height: 100px; /* Adjust the height for smaller screens */
+  }
 }
 
 /* ==================
@@ -487,6 +561,7 @@ ORGANIZERS
 .organizer-item {
   display: inline-block;
   margin: 0 30px 30px 0;
+  margin: 0 40px 40px 0; /* Increase the margin values for more separation */
 }
 
 .organizers-list {
@@ -520,11 +595,65 @@ ORGANIZERS
 }
 
 .organizer-affiliation {
+  font-size: 12px;
   font-style: italic;
   margin: 5px 0;
 }
 .organizer-email {
   margin: 0;
+  font-size: 12px;
+
+}
+
+
+/* icons */
+
+
+/* Modify the CSS for the icon-links div */
+.icon-links {
+  display: flex; /* Use flexbox to arrange icons horizontally */
+  align-items: center; /* Center icons vertically */
+  margin-top: 10px; /* Add space between the image and icons */
+}
+
+
+.icon-links a {
+  font-size: 20px; /* Adjust the font size for smaller icons */
+  color: #0077B5;
+  text-decoration: none;
+  margin-left: 20px; /* Add space between icons */
+  margin-right: 0px; /* Add space between icons */
+}
+
+.icon-links a:last-child {
+  margin-right: 0; /* Remove the margin from the last icon */
+}
+
+.icon-links a:hover {
+  color: #4285F4;
+}
+
+
+/* Local Organiznig Team */
+
+.team-list {
+  list-style-type: none;
+  padding: 0;
+  columns: 2; /* Set the number of columns */
+  text-align: center;
+}
+
+.team-list-item {
+  display: block;
+  margin-bottom: 15px; /* Adjust this value to change the separation */
+  font-size: 19px; /* Adjust this value to change the font size */
+}
+
+@media screen and (max-width: 600px) {
+  .team-list-item {
+    margin-bottom: 14px; /* Adjust this value to change the separation */
+    font-size: 15px; /* Adjust this value for smaller font size */
+  }
 }
 
 /* =============================================================================
@@ -689,11 +818,11 @@ ORGANIZERS
   /* speakers */
   .speakers-item {
     min-height: 70px;
-    padding-left: 70px;
+    padding-left: 110px; /* Changes padding when increasing px picture */
   }
-  .speaker-photo {
-    width: 50px;
-    height: 50px;
+  .speaker-photo { /* Changes speaker dimensions for media */
+    width: 90px;
+    height: 90px;
   }
   .speech-title {
     padding-top: 0;
@@ -704,9 +833,35 @@ ORGANIZERS
     font-size: 16px;
     padding: 0;
   }
+  /* 
   .speakers-bio {
     display: none;
+  }*/
+/* changes in media for organizers */
+  .organizer-item {
+  display: inline-block; /* Change to block for stacking on smaller screens */
+  margin: 50px 0 0 30px; /* Adjust margin for stacking */
+  background-color: transparent;
   }
+
+  .organizers-list {
+    text-align: center; /* Center the content within the ul element */
+  }
+  .organizer-link {
+    width: 100px; /* Reduce the image size */
+    height: 100px;
+    line-height: 100px;
+    background-color: transparent; /* Optional: Add a white background for the circular image */
+
+  }
+
+  .organizer-link img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 0 0 28px; /* Adjust margin for stacking */
+  }
+
+
 }
 @media only screen and (max-width: 321px) {
   .logo-name {
@@ -769,11 +924,22 @@ nav {
    HEADER
    ========================================================================== */
 .header {
-  /* =background-image: url('../img/cover-2.jpg');*/
+  background-image: url('image.jpg');
   background-color: #2b2b2b;
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100% auto;
+  height: 220px; /* Adjust the height value as needed 150 media*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  text-align: center; /* Center text horizontally */
+}
+/* Media query for screens with a maximum width of 768px (adjust as needed) */
+@media screen and (max-width: 768px) {
+  .header {
+    height: 150px; /* Adjust the height value for mobile devices */
+  }
 }
 .logo-link,
 .tagline,
@@ -812,7 +978,7 @@ nav {
    CONTENT
    ========================================================================== */
 .content a {
-  color: #f0a303;
+  color: #3862c9; /* =# color links */
 }
 .content a:hover,
 .content a:focus {
@@ -827,6 +993,22 @@ nav {
   background: #fff;
   border-radius: 4px;
 }
+
+
+/* Default styles for the responsive image */
+.responsive-image {
+    width: 300px; /* Set the image width to 300px on larger screens */
+    height: 200px; /* Set the image height to 200px on larger screens */
+}
+
+/* Media query for screens with a maximum width of 600px (typical for mobile phones) */
+@media screen {
+    .responsive-image {
+        max-width: 45%;
+        height: auto /* Reduce the image width on smaller screens */
+    }
+}
+
 /* =============================================================================
    REGISTRATION
    ========================================================================== */
@@ -839,6 +1021,21 @@ nav {
 .cfp {
   border-radius: 10px;
 }
+
+ul.subject-list {
+  list-style: disc ;
+  padding-left: 20px;
+}
+ul.subject-list li {
+  list-style: disc outside none;
+  display: list-item;
+  margin-left: 1em;
+  margin-bottom: 15px; /* Adjust if needed in media */
+  font-size: 150%; /* Adjust the font size as needed */
+}
+
+
+
 /* =============================================================================
    LOCATION
    ========================================================================== */
@@ -863,6 +1060,24 @@ nav {
     float: left
     margin-right: 0;
   }
+}
+
+/* Grid Images arg */
+
+/* Define a class for responsive images */
+.responsive-img-loc {
+  width: 340px; /* Make the image scale down to fit the container */
+  height: 277px; /* Maintain the image's aspect ratio */
+  margin: 5px;
+}
+
+/* Media query for screens smaller than 768px wide */
+
+@media (max-width: 421px) {
+  .responsive-img-loc {
+        max-width: 85%;
+        height: auto /* Reduce the image width on smaller screens */
+    }
 }
 /* =============================================================================
    SPEAKER
@@ -923,6 +1138,20 @@ nav {
 .schedule-lunch,
 .schedule-other {
   color: #214f87;
+}
+
+/* Default styles for the responsive image */
+.responsive-schedule {
+    width: 900px; /* Set the image width to 300px on larger screens */
+    /* height: 400px; Set the image height to 200px on larger screens */
+}
+
+/* Media query for screens with a maximum width of 600px (typical for mobile phones) */
+@media screen {
+    .responsive-schedule {
+        max-width: 90%;
+        height: auto /* Reduce the image width on smaller screens */
+    }
 }
 /* =============================================================================
    SPONSORS

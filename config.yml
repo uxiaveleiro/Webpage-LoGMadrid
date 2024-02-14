@@ -1,5 +1,5 @@
-baseurl: "https://example.org/"
-title: "Conference name"
+baseurl: "https://logmeetupmadrid.github.io/"
+title: "LoG Madrid"
 canonifyurls: true
 theme: "hugo-conference"
 
@@ -7,9 +7,9 @@ GoogleAnalytics: ""
 
 params:
   # Conference info
-  Name: "Conference name"
-  Description: "Conference description"
-  Date: "November DD - DD th"
+  Name: "LoG Madrid"
+  Description: "LoG Meet Up Madrid"
+  Date: "November 27 - 29 th"
   #Price: "Only XX€" # If your event is free, just comment this line
   Venue: "Madrid"
   Address: "Edificio XXX, Calle XXX, NN"
@@ -26,156 +26,311 @@ params:
     - cfp
     - schedule
     - speakers
+    - selected_talks # comment first upload
+    - organizers 
     - sponsors
-    - partners
+    #- partners
     - location
-    - organizers # change better for organizers 
 
-  # Titles which you can translate to other languages
+  # Titles 
   Titles:
     about: "About"
     registration: "Registration"
     cfp: "Call for talks"
-    location: "Location"
+    location: "The Venue"
     schedule: "Schedule"
-    speakers: "Speakers"
+    speakers: "Keynote Speakers"
+    selected_talks: "Selected Talks"
     sponsors: "Sponsors"
     partners: "Partners"
     organizers: "Organizers"
 
-  # The Call To Action button at the header,
-  # If you don't want this, just remove the callToAction property.
-  CallToAction:
-    text: "Call for Talks"
-    link: "#cfp" ## CHANGE THIS !!!
-
-  # Fork me on GitHub, if you don't want this, just remove the forkButton property
-  #ForkButton:
-  #  repository: "https://github.com/jweslley/hugo-conference/"
-
   # List of Sponsors
   Sponsors:
-    - name: "Michi"
-      logo: "/img/michi-cool.png"
-      #url: "http://gohugo.io"
-    - name: "Michi"
-      logo: "/img/michi-cool-2.png"
-      #url: "http://gohugo.io"
 
-  # List of Partners
-  Partners:
-    - name: "Michi"
-      logo: "/img/paw.png"
-      #url: "https://gohugo.io"
-    - name: "Michi"
-      logo: "/img/paw.png"
-      #url: "http://braziljs.org"
+    - name: "URJC"
+      logo: "/img/logo_urjc-3.jpg"
+      url: "https://www.urjc.es"
+
+    - name: "CIMA BioComp"
+      logo: "/img/LogoCima_2.png"
+      url: "https://cima.cun.es"
+
+    - name: "ELLIS Madrid"
+      logo: "/img/ellis.png"
+      url: "https://ellismadrid.es"
+
+    - name: "CAM"
+      logo: "/img/CAM_edit_2.png"
+      url: "https://www.comunidad.madrid"
+
 
   # The entire schedule
   Schedule:
 
-    - name: "Check-in & Opening"
-      time: "Monday - 9h00"
+    - name: "Registration and Reception"
+      time: "Monday 9h30-10h45"
 
-    - name: "Name Surname"
-      photo: "/img/speaker1.png"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Cat Foundation"
-      #link:
-      #  href: "http://twitter.com/linus"
+    - name: "Opening Madrid LoG"
+      time: "Monday 10h45-11h00"
+
+    - name: "On the stability of spectral graph filters and beyond: A topological perspective." # Name Surname
+      photo: "/img/xiaowen.jpg"
+      url: "www.example.org"
+      abstract: "Graph-based signal processing and machine learning are recent techniques that have been developed to handle graph-structured data and have seen applications in such diverse fields as drug discovery, fake news detection, and traffic prediction. Despite the encouraging empirical results, a theoretical understanding of the robustness of these models against perturbation to the input graph domain has been lacking. In this talk, I will present our results on the stability bounds of spectral graph filters as well as other recent work on the robustness of graph machine learning models. A commonality of these studies is that they all share a topological perspective, that is, linking robustness to topological properties of the graph domain and perturbation. This contributes to a better understanding of robustness hence the deployment of graph-based models in real-world scenarios." 
+      bio: "Xiaowen Dong is an associate professor in the Department of Engineering Science at the University of Oxford, where he is a member of both the Machine Learning Research Group and the Oxford-Man Institute. Prior to joining Oxford, he was a postdoctoral associate in the MIT Media Lab, where he remains as a research affiliate, and received his PhD degree from the Swiss Federal Institute of Technology (EPFL), Lausanne, Switzerland. His main research interests concern signal processing and machine learning techniques for analysing network data, and their applications in social and economic sciences."
+      #"Associate professor in the Department of Engineering Science at the University of Oxford."
+      company: "University of Oxford" # Cat Foundation
+      link:
+        href: "https://eng.ox.ac.uk/people/xiaowen-dong/"
+        #text: "@linus"
+      presentation:
+        title: "Xiaowen Dong" # Speaker Name
+        time: "Monday 11h00-12h00"
+
+    - name: "Refreshments"
+      time: "Monday 12h00-12h20"
+
+    - name: "Sessions Madrid LoG (Mon-1)"
+      time: "Monday 12h20-14h00"
+
+    - name: "Lunch time (lunch not provided)"
+      time: "Monday 14h00-16h30"
+
+    - name: "Program LoG (opening)"
+      time: "Monday 16h30-17h00"
+
+    - name: "Program LoG (oral)"
+      time: "Monday 17h00-18h00"
+
+    - name: "Program LoG (keynote Leskovec)"
+      time: "Monday 18h00-19h00"
+
+
+    ##### TUESDAY
+    - name: "Unpacking Data Needs for Deep Learning Based Imaging" # Name Surname
+      photo: "/img/reinhard_1_.jpg"
+      abstract: "Deep neural networks trained on example images enable a new generation of consumer, medical, and scientific imaging systems. I will start this talk with highlighting the role of training data. Surprisingly little data is needed for obtaining state-of-the-art performance. Moreover, it is possible to learn effectively without clean ground-truth data with self-supervised learning methods. However, the excellent performance of deep networks for imaging can be deceiving, as it is usually measured by training and testing on similar looking data, say on data from one hospital. By evaluating neural networks in a variety of practical scenarios, for example by training and evaluating networks on data from different hospitals, we identified a key challenge in deep learning based imaging: robustness to distribution shifts. Finally, I will discuss model and data driven approaches for building robust deep learning based imaging methods."
+      bio: "Reinhard Heckel is a Rudolf Moessbauer assistant professor in the Department of Computer Engineering at the Technical University of Munich, and an adjunct assistant professor at Rice University, where he was an assistant professor in the ECE department from 2017-2019. Before that, he was a postdoctoral researcher in the Department of Electrical Engineering and Computer Sciences at the University of California, Berkeley, and a researcher at the Cognitive Computing & Computational Sciences Department at IBM Research Zurich. He completed his PhD in electrical engineering in 2014 at ETH Zurich and was a visiting PhD student at the Statistics Department at Stanford University. Reinhard is working in the intersection of machine learning and signal/information processing with a current focus on deep networks for solving inverse problems, developing foundations and methods for machine learning, and DNA data storage."
+        #"Professor for Machine Learning at the Department of Computer Engineering at TUM (Technical University of Munich)."
+      company: "Technical University of Munich" # Cat Foundation
+      link:
+        href: "https://www.professoren.tum.de/en/heckel-reinhard"
+      #  text: "WebPage"
+      presentation:
+        title: "Reinhard Heckel" #Speaker Name
+        time: "Tuesday - 09h30-10h30"
+
+    - name: "Coffee Break"
+      time: "Tuesday - 10h30-11h00"
+
+
+    - name: "Sessions Madrid LoG (Tue-1)"
+      time: "Tuesday - 11h00-12h20"
+
+    - name: "Refreshments"
+      time: "Tuesday - 12h20-12h40"
+
+    - name: "Sessions Madrid LoG (Tue-2)"
+      time: "Tuesday - 12h40-14h00"
+
+    - name: "Lunch time (lunch not provided)"
+      time: "Tuesday - 14h00-16h00"
+
+    - name: "Program LoG (keynote Loukas)"
+      time: "Tuesday - 16h00-17h00"
+
+    - name: "Refreshments"
+      time: "Tuesday - 17h00-17h30"
+
+    - name: "Discussion"
+      time: "Tuesday - 17h30-18h00"
+
+
+    ##### WEDNESDAY
+    - name: "Statistical Mechanics of Graph Convolution Networks" # Name Surname
+      photo: "/img/ivan2.jpeg"
+      abstract: "Graph neural networks (GNNs) excel in modeling relational data such as biological, social, and transportation networks, but the underpinnings of their success are elusive. Traditional complexity measures from statistical learning theory fail to account for observed phenomena like the double descent or the impact of relational semantics on generalization error. Motivated by experimental observations of ``transductive'' double descent in key networks and datasets, we use analytical tools from statistical physics and random matrix theory to precisely characterize generalization in simple graph convolution networks on the contextual stochastic block model. Our results illuminate the nuances of learning on homophilic versus heterophilic data and predict double descent whose existence in GNNs has been questioned by recent work. We show how risk is shaped by the interplay between the graph noise, feature noise, and the number of training labels. Our findings apply beyond stylized models, capturing qualitative trends in real-world GNNs and datasets. As a case in point, we use our analytic insights to improve performance of state-of-the-art graph convolution networks on heterophilic datasets."
+      bio: "Associate Professor at the Department of Mathematics and Computer Science of the University of Basel."      #company: "TBA" # Cat Foundation
+      company: "University of Basel"
+      link: 
+        href: "https://dmi.unibas.ch/de/personen/ivan-dokmanic/"
       #  text: "@linus"
       presentation:
-        title: "Speaker Name"
-        time: "Monday - 9h30"
+        title: "Ivan Dokmanić " # Speaker Name
+        time: "Wednesday - 09h30-10h30"
 
-    - name: "Coffee-break"
-      time: "Monday - 11h00"
 
-    - name: "Pitch talks"
-      time: "Monday - 12h00"
+    - name: "Coffee Break"
+      time: "Wednesday - 10h30-11h00"
 
-    - name: "Lunch break"
-      time: "Monday - 13h00"
+    - name: "Sessions Madrid LoG (Wed-1)"
+      time: "Wednesday - 11h00-12h20"
 
-    - name: "Pitch talks"
-      time: "Monday - 12h00"
+    - name: "Refreshments"
+      time: "Wednesday - 12h20-12h40"
 
-    - name: "Coffee-break"
-      time: "Monday - 15h00"
+    - name: "Sessions Madrid LoG (Wed-2)"
+      time: "Wednesday - 12h40-14h00"
 
-    - name: "Pitch talks"
-      time: "Monday - 16h00"
+    - name: "Lunch time (lunch not provided)"
+      time: "Wednesday - 14h00-16h00"
 
-    - name: "Name Surname"
-      photo: "/img/speaker2.png"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Cat Foundation"
-      #link:
-      #  href: "http://twitter.com/linus"
-      #  text: "@linus"
-      presentation:
-        title: "Speaker Name"
-        time: "Tuesday - 9h30"
+    - name: "Program LoG (tutorials)"
+      time: "Wednesday - 16h00-17h00"
 
-    - name: "Pitch talks"
-      time: "Tuesday - 12h00"
+    - name: "Coffee Break"
+      time: "Wednesday - 17h00-17h30"
 
-    - name: "Lunch"
-      time: "Tuesday - 13h00"
+    - name: "Program LoG (tutorials)"
+      time: "Wednesday - 17h30-19h00"
 
-    - name: "Pitch talks"
-      time: "Tuesday - 12h00"
+    - name: "Program LoG (keynote Jegelka)"
+      time: "Wednesday - 19h00-20h00"
 
-    - name: "Coffee-break"
-      time: "Tuesday - 15h00"
+    
 
-    - name: "Pitch talks"
-      time: "Tuesday - 16h00"
 
-    - name: "Name Surname"
-      photo: "/img/speaker3.png"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Cat Foundation"
-      #link:
-      #  href: "http://twitter.com/linus"
-      #  text: "@linus"
-      presentation:
-        title: "Speaker Name"
-        time: "Wednesday - 9h30"
-        
-    - name: "Lunch"
-      time: "Wednesday - 12h00"
+  selected_talks:
 
-    - name: "Pitch talks"
-      time: "Wednesday - 12h00"
+  #### MONDAY 1
 
-    - name: "Lunch"
-      time: "Wednesday - 13h00"
+  - slot: "Monday-1 12:20 - 14:00"
+    title: "Learning Types of Hierarchical Relationships on Complex Class Labelling Systems"
+    speaker: "Connor Clarkson"
 
-    - name: "Pitch talks"
-      time: "Wednesday - 16h00"
+  - slot: "Monday-1 12:20 - 14:00"
+    title: "Structure-Preserving Graph Neural Networks"
+    speaker: "Alberto Badias"
 
-    - name: "Closing remarks"
-      time: "Wednesday - 17h00"
+  - slot: "Monday-1 12:20 - 14:00"
+    title: "ResolvNet: A Graph Convolutional Network with multi-scale Consistency"
+    speaker: "Christian Koke"
+
+  - slot: "Monday-1 12:20 - 14:00"
+    title: "Robust Graph Neural Network based on Graph Denoising"
+    speaker: "Samuel Rey"
+
+  - slot: "Monday-1 12:20 - 14:00"
+    title: "Learning Graphs and Simplicial Complexes from Data" 
+    speaker: "Andrei Buciulea Vlas"
+
+  #### TUESDAY 1
+  - slot: "Tuesday-1 11:00 - 12:40"
+    title: "Towards a more inductive world for drug repurposing approaches"
+    speaker: "Jesús de la Fuente"
+
+  - slot: "Tuesday-1 11:00 - 12:40"
+    title: "Leveraging Temporal Graph Neural Networks for Drug Repurposing Using Prescription Data in Norway"
+    speaker: "Asieh Abolpour Mofrad"
+
+  - slot: "Tuesday-1 11:00 - 12:40"
+    title: "A molecular foundation model for drug discovery based on molecular graphs"
+    speaker: "Oscar Mendez-Lucio"
+
+  - slot: "Tuesday-1 11:00 - 12:40"
+    title: "GeNNius: An ultrafast drug-target interaction inference method based on graph neural networks"
+    speaker: "Uxía Veleiro"
+
+
+  #### TUESDAY 2
+  - slot: "Tuesday-2 12:40 - 14:00"
+    title: "A General Graph Convolution Theorem: Application to Dual Graph Inference"
+    speaker: "Geert Leus"
+
+  - slot: "Tuesday-2 12:40 - 14:00"
+    title: "Tensor completion using graph-based diffusion: a remote sensing image completion study"
+    speaker: "Iain Rolland"
+
+  - slot: "Tuesday-2 12:40 - 14:00"
+    title: "Recovering Missing Node Features with Local Structure-based Embeddings"
+    speaker: "Víctor M Tenorio"
+
+  - slot: "Tuesday-2 12:40 - 14:00"
+    title: "Completing Missing Air Quality Data with Graph-Based Techniques"
+    speaker: "Michelle Wan"
+
+  # WEDNESDAY 1
+
+
+  - slot: "Wednesday-1 11:00 - 12:40"
+    title: "Using Graph Neural Networks to Predict Airport Congestion and Air Traffic Delays"
+    speaker: "Guillermo Megías"
+
+  - slot: "Wednesday-1 11:00 - 12:40"
+    title: "Spatio-Temporal Graphs and GNN for Antimicrobial Multidrug Resistance Prediction in Intensive Care Unit"
+    speaker: "Oscar Escudero"
+
+  - slot: "Wednesday-1 11:00 - 12:40"
+    title: "gMCSpy: Efficient and accurate computation of Genetic Minimal Cut Sets in Python"
+    speaker: "Carlos J Rodriguez"
+
+  - slot: "Wednesday-1 11:00 - 12:40"
+    title: "Bayesian Graph Neural Networks, how to optimize a cellular network and provide confidence to our customers"
+    speaker: "Oscar Llorente Gonzalez"
+
+
+  ## WEDNESDAY 2
+
+  - slot: "Wednesday-2 12:40 - 14:00"
+    title: "Asymmetry-Labeled DAGs: Representation, Learning and Causal Reasoning"
+    speaker: "Manuele Leonelli"
+
+  - slot: "Wednesday-2 12:40 - 14:00"
+    title: "HoloNets: Spectral Convolutions do extend to Directed Graphs"
+    speaker: "Christian Koke"
+
+  - slot: "Wednesday-2 12:40 - 14:00"
+    title: "Graph-Based Dimensionality Reduction and Clustering for Earth and Life Sciences"
+    speaker: "Nathan Mankovich"
+
+
+
 
 
   # List of Contacts
   Contacts:
-    - name: "Name Surname"
-      logo: "/img/contact1.jpg"
-      email: "a@a.gal"
-      affiliation: "Xanceda"
-      url: "https://www.linkedin.com/in/uxiaveleiro/"
 
-    - name: "Name Surname"
-      logo: "/img/contact1.jpg"
-      email: "a@a.gal"
-      affiliation: "Xanceda"
+    - name: "Antonio G. Marqués"
+      logo: "/img/antoniogmarques.jpg"
+      email: "antonio.garcia.marques@urjc.es"
+      affiliation: "Universidad Rey Juan Carlos"
       #url: "https://gohugo.io"
+      home: "https://tsc.urjc.es/~amarques/" 
+      linkedin: "https://es.linkedin.com/in/antonio-garc%C3%ADa-marqu%C3%A9s-1ba65254" 
+      googleScholar: "https://scholar.google.com/citations?user=d05JMMkAAAAJ&hl=en" 
 
-    - name: "Name Surname"
-      logo: "/img/contact1.jpg"
-      email: "a@a.gal"
-      affiliation: "Xanceda"
-      #url: "https://gohugo.io"
+    - name: "Mikel Hernaez"
+      logo: "/img/mikelhernaez.jpg"
+      email: "mhernaez@unav.es"
+      affiliation: "CIMA Universidad de Navarra"
+      home: "https://mikelhernaez.github.io/" 
+      linkedin: "https://www.linkedin.com/in/mikel-hernaez-ab168332" 
+      googleScholar: "https://scholar.google.es/citations?user=-mh8RQ8AAAAJ&hl=en" 
+
+    - name: "Uxia Veleiro"
+      logo: "/img/uxiaveleiro.jpg"
+      email: "uveleirocar@unav.es"
+      affiliation: "CIMA Universidad de Navarra"
+      #url: "https://www.linkedin.com/in/uxiaveleiro/"
+      home: "https://uxiaveleiro.github.io/"
+      linkedin: "https://es.linkedin.com/in/uxiaveleiro/" 
+      googleScholar: "https://scholar.google.es/citations?user=E5T8cZUAAAAJ&hl=en" # Add the Google Scholar URL here 
+
+    - name: "Samuel Rey"
+      logo: "/img/SamuelRey.jpg"
+      email: "samuel.rey.escudero@urjc.es"
+      affiliation: "Universidad Rey Juan Carlos"
+      home: "https://gestion2.urjc.es/pdi/ver/samuel.rey.escudero"
+      linkedin: "https://www.linkedin.com/in/samuel-rey-escudero-52510abb/" 
+      googleScholar: "https://scholar.google.com/citations?user=fUy5BM4AAAAJ&hl=es"
+
+  Team:
+    - name: "Andrei Buciulea"
+    - name: "Óscar Escudero"
+    - name: "Sergio Rozada"
+    - name: "Víctor Tenorio"
+    - name: "Bianca Radu"
+    - name: "Fernando Real Rojas"
+
 
